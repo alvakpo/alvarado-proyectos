@@ -55,15 +55,7 @@ body.drawer-open {
   transform: translateX(0);
 }
 
-/* Transfer modal open states */
-#transfer-modal.active {
-  opacity: 1;
-  pointer-events: auto;
-}
 
-#transfer-modal.active #transfer-modal-card {
-  transform: scale(1);
-}
 
 /* Sticky cart visible state */
 #sticky-cart-bar.visible {

@@ -351,16 +351,14 @@
         <!-- Action Buttons -->
         <div class="space-y-2 pt-1">
           <!-- WhatsApp Action -->
-          <button id="action-whatsapp-btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2.5 text-sm">
+          <button id="action-whatsapp-btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2.5 text-sm active:scale-95">
             <i data-lucide="message-circle" class="w-5 h-5"></i>
-            <span>Confirmar Aporte por WhatsApp</span>
+            <span>Coordinar Aporte por WhatsApp</span>
           </button>
 
-          <!-- Transfer Direct Button -->
-          <button id="show-transfer-info-btn" class="w-full bg-alva-navy hover:bg-alva-blue text-white font-bold py-2.5 px-4 rounded-xl border border-transparent transition-all flex items-center justify-center gap-2 text-xs sm:text-sm">
-            <i data-lucide="building-2" class="w-4 h-4"></i>
-            <span>Transferir por Alias / CBU</span>
-          </button>
+          <p class="text-center text-[11px] text-slate-500 leading-tight pt-1">
+            Se enviará la lista exacta de materiales seleccionados para coordinar el pago o entrega física con la subcomisión de obras del club.
+          </p>
         </div>
 
         <!-- Quick Clear Cart -->
@@ -376,59 +374,7 @@
     </div>
   </div>
 
-  <!-- TRANSFER / ALIAS INFO MODAL -->
-  <div id="transfer-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 transform scale-95 transition-transform duration-300" id="transfer-modal-card">
-      
-      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
-        <div class="flex items-center gap-2">
-          <i data-lucide="landmark" class="w-5 h-5 text-alva-blue"></i>
-          <h4 class="font-heading font-bold text-slate-900 text-base">Datos Bancarios Oficiales</h4>
-        </div>
-        <button id="close-transfer-modal-btn" class="text-slate-400 hover:text-slate-600 p-1">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
 
-      <div class="py-4 space-y-3 text-xs sm:text-sm">
-        <div class="p-3 bg-blue-50 rounded-xl border border-blue-100">
-          <p class="text-xs text-blue-900 font-semibold mb-1">Cuenta Corriente Oficial Pro-Obras:</p>
-          <p class="text-sm font-bold text-alva-navy">Club Atlético Alvarado</p>
-          <p class="text-xs text-slate-600">CUIT: 30-58923412-4</p>
-        </div>
-
-        <div class="space-y-1">
-          <span class="text-xs font-semibold text-slate-500">Alias de Transferencia:</span>
-          <div class="flex items-center justify-between p-2.5 bg-slate-100 rounded-xl border border-slate-200">
-            <span class="font-mono font-bold text-slate-900 text-sm" id="alias-text">ALVARADO.VILLA.MP</span>
-            <button id="copy-alias-btn" class="bg-white hover:bg-slate-50 text-alva-blue font-bold px-3 py-1 rounded-lg border border-slate-300 text-xs transition-all flex items-center gap-1 active:scale-95">
-              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
-              <span id="copy-feedback">Copiar</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="space-y-1">
-          <span class="text-xs font-semibold text-slate-500">CBU:</span>
-          <div class="p-2.5 bg-slate-100 rounded-xl border border-slate-200 font-mono text-xs text-slate-800 break-all select-all">
-            0140323501400012345678
-          </div>
-        </div>
-
-        <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-amber-900 text-xs leading-relaxed">
-          <strong>Importante:</strong> Una vez realizada la transferencia, envianos el comprobante por WhatsApp para asentar los materiales a tu nombre en la lista de aportes.
-        </div>
-      </div>
-
-      <div class="pt-2">
-        <button id="modal-send-receipt-btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
-          <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Avisar pago por WhatsApp</span>
-        </button>
-      </div>
-
-    </div>
-  </div>
 
   <!-- TOAST NOTIFICATION CONTAINER -->
   <div id="toast-container" class="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>

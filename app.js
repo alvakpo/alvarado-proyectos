@@ -450,7 +450,7 @@ function renderDrawer(totalCount, totalPrice) {
   if (window.lucide) window.lucide.createIcons();
 }
 
-// APERTURA / CIERRE DE MODALES Y DRAWERS
+// APERTURA / CIERRE DEL DRAWER
 function openCartDrawer() {
   const overlay = document.getElementById('cart-drawer-overlay');
   if (overlay) {
@@ -464,20 +464,6 @@ function closeCartDrawer() {
   if (overlay) {
     overlay.classList.remove('active');
     document.body.classList.remove('drawer-open');
-  }
-}
-
-function openTransferModal() {
-  const modal = document.getElementById('transfer-modal');
-  if (modal) {
-    modal.classList.add('active');
-  }
-}
-
-function closeTransferModal() {
-  const modal = document.getElementById('transfer-modal');
-  if (modal) {
-    modal.classList.remove('active');
   }
 }
 
@@ -497,7 +483,7 @@ function sendWhatsAppDonation() {
   let lines = [];
   lines.push(`🟦⬜ *APORTE VILLA DEPORTIVA - ALVARADO* ⬜🟦`);
   lines.push(`*Proyecto 1: Cerrar la Villa Deportiva (Etapa 1/4)*\n`);
-  lines.push(`👤 *Colaborador:* ${hinchaName}`);
+  lines.push(`👤 *Hincha / Colaborador:* ${hinchaName}`);
   lines.push(`📦 *Detalle de Materiales:*`);
 
   let total = 0;
@@ -511,33 +497,15 @@ function sendWhatsAppDonation() {
   });
 
   lines.push(`\n💰 *Total Aporte:* ${formatMoney(total)}`);
-  lines.push(`\n¡Quiero coordinar la entrega / confirmar el comprobante de transferencia para sumar estos materiales a la obra del club!`);
+  lines.push(`\n¡Hola! Quiero coordinar con el club cómo realizar el aporte o la entrega física de estos materiales para la obra.`);
 
   const fullText = encodeURIComponent(lines.join('\n'));
   
-  // Número oficial de la Subcomisión de Obras (ejemplo representativo)
+  // Número de WhatsApp del club
   const whatsappNumber = '5492235900000';
   const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${fullText}`;
 
   window.open(url, '_blank');
-}
-
-// COPIAR ALIAS AL PORTAPAPELES
-function copyAlias() {
-  const alias = 'ALVARADO.VILLA.MP';
-  navigator.clipboard.writeText(alias).then(() => {
-    const feedback = document.getElementById('copy-feedback');
-    if (feedback) {
-      feedback.textContent = '¡Copiado!';
-      setTimeout(() => {
-        feedback.textContent = 'Copiar';
-      }, 2500);
-    }
-    showToast('Alias copiado: ALVARADO.VILLA.MP');
-  }).catch(err => {
-    console.error('Error al copiar:', err);
-    showToast('Alias: ALVARADO.VILLA.MP');
-  });
 }
 
 // SISTEMA DE TOAST NOTIFICATIONS
@@ -594,28 +562,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Enviar por WhatsApp
   const waBtn = document.getElementById('action-whatsapp-btn');
   if (waBtn) waBtn.addEventListener('click', sendWhatsAppDonation);
-
-  // Modal de transferencia bancaria
-  const showTransferBtn = document.getElementById('show-transfer-info-btn');
-  if (showTransferBtn) showTransferBtn.addEventListener('click', openTransferModal);
-
-  const closeTransferBtn = document.getElementById('close-transfer-modal-btn');
-  if (closeTransferBtn) closeTransferBtn.addEventListener('click', closeTransferModal);
-
-  const transferModal = document.getElementById('transfer-modal');
-  if (transferModal) {
-    transferModal.addEventListener('click', (e) => {
-      if (e.target === transferModal) closeTransferModal();
-    });
-  }
-
-  // Copiar Alias
-  const copyBtn = document.getElementById('copy-alias-btn');
-  if (copyBtn) copyBtn.addEventListener('click', copyAlias);
-
-  // Enviar comprobante por WhatsApp
-  const sendReceiptBtn = document.getElementById('modal-send-receipt-btn');
-  if (sendReceiptBtn) sendReceiptBtn.addEventListener('click', sendWhatsAppDonation);
 
   // Filtros de categoría
   const filterButtons = document.querySelectorAll('.filter-btn');
