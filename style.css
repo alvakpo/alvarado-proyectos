@@ -16,37 +16,37 @@
   background: #94a3b8;
 }
 
-/* Dotted Leader Line for Material Rows (like the reference image) */
+/* Dotted Leader Line for Material Rows (identical to reference image) */
 .dotted-leader {
   flex-grow: 1;
-  border-bottom: 2px dotted #94a3b8;
-  margin: 0 0.75rem;
+  border-bottom: 2px dotted #cbd5e1;
+  margin: 0 0.85rem;
   min-width: 1.5rem;
   height: 1px;
   align-self: center;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
-/* Material Row Hover & Selection States */
-.material-row {
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+/* Material Row inside the single container */
+.material-single-row {
+  transition: background-color 0.15s ease;
 }
-.material-row:hover {
+.material-single-row:hover {
   background-color: #f8fafc;
-  transform: translateX(2px);
 }
-.material-row.selected {
+.material-single-row.selected {
   background-color: #eff6ff;
-  border-color: #3b82f6;
 }
 
-/* Strikethrough badge from image */
+/* Strikethrough tag below red number */
 .strikethrough-tag {
   position: relative;
   display: inline-block;
   color: #94a3b8;
   font-size: 0.7rem;
   font-weight: 700;
+  line-height: 1;
+  margin-top: 2px;
 }
 .strikethrough-tag::after {
   content: '';
@@ -74,16 +74,6 @@ body.drawer-open {
   overflow: hidden;
 }
 
-#cart-drawer-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-#cart-drawer-overlay.active #cart-drawer {
-  transform: translateX(0);
-}
-
-/* Checkout Modal */
 #checkout-modal.active {
   opacity: 1;
   pointer-events: auto;
@@ -97,7 +87,7 @@ body.drawer-open {
   transform: translateY(0);
 }
 
-/* Quantity Button Ripple / Active state */
+/* Quantity Button */
 .qty-btn {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -111,16 +101,6 @@ body.drawer-open {
   background-color: #001a44 !important;
   color: #ffffff !important;
   border-color: #001a44 !important;
-}
-
-/* Diagram interactive callouts */
-.diagram-pin {
-  cursor: pointer;
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-.diagram-pin:hover {
-  transform: scale(1.04);
-  filter: drop-shadow(0 4px 8px rgba(0, 56, 130, 0.25));
 }
 
 /* Toast message animation */

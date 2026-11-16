@@ -43,11 +43,11 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-body antialiased min-h-screen flex flex-col selection:bg-alva-lightBlue selection:text-white">
+<body class="bg-slate-100 text-slate-800 font-body antialiased min-h-screen flex flex-col selection:bg-alva-lightBlue selection:text-white">
 
   <!-- TOP HEADER -->
   <header class="bg-alva-navy text-white sticky top-0 z-40 shadow-lg border-b border-alva-blue/50 backdrop-blur-md bg-opacity-95">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
       
       <!-- Brand & Escudo -->
       <a href="#" class="flex items-center gap-3.5 group">
@@ -83,99 +83,94 @@
   <main class="flex-grow">
     
     <!-- HERO SECTION: PROYECTO 1 Y ETAPAS DEL PAREDÓN -->
-    <section class="relative bg-gradient-to-b from-alva-navy via-alva-blue to-slate-900 text-white py-12 md:py-16 overflow-hidden">
-      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
-      
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="relative bg-gradient-to-b from-alva-navy via-alva-blue to-slate-900 text-white py-10 md:py-14">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         
         <!-- Header Text -->
-        <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold text-blue-200">
+        <div class="text-center max-w-2xl mx-auto mb-8 space-y-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-blue-200">
             <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
             Campaña Paredón Perimetral • Villa Deportiva
           </div>
 
-          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight leading-tight uppercase">
+          <h1 class="text-3xl sm:text-5xl font-heading font-black tracking-tight uppercase leading-tight">
             Proyecto 1:<br>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-sky-300 to-white">
               Cerrar la Villa Deportiva
             </span>
           </h1>
 
-          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Todas las etapas están destinadas a levantar el paredón de cerramiento para asegurar nuestro predio en Ruta 88.
+          <p class="text-slate-300 text-sm">
+            Todas las etapas están destinadas a construir el paredón perimetral de cerramiento.
           </p>
         </div>
 
-        <!-- 4 ETAPAS DEL PAREDÓN (Todas centradas en el muro de cerramiento) -->
-        <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 sm:p-8 shadow-2xl mb-4">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-white/10 mb-6">
+        <!-- 4 ETAPAS DEL PAREDÓN -->
+        <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-5 sm:p-7 shadow-2xl mb-8">
+          
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-5 border-b border-white/10 mb-5">
             <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-sky-300 bg-sky-950/70 px-3 py-1 rounded-md border border-sky-400/30 inline-block mb-1.5">
+              <span class="text-xs font-bold uppercase tracking-wider text-sky-300 bg-sky-950/70 px-2.5 py-0.5 rounded border border-sky-400/30 inline-block mb-1">
                 Etapa en Colecta Activa
               </span>
-              <h2 class="text-2xl sm:text-3xl font-heading font-black text-white uppercase">
+              <h2 class="text-xl sm:text-2xl font-heading font-black text-white uppercase">
                 Etapa 1 : Primeros 255 metros de Paredón Lineal
               </h2>
             </div>
             <div class="text-left sm:text-right">
               <span class="text-xs text-slate-300 block">Longitud total del predio:</span>
-              <span class="font-heading font-extrabold text-lg text-emerald-400">1.020 metros lineales</span>
+              <span class="font-heading font-extrabold text-base sm:text-lg text-emerald-400">1.020 metros lineales</span>
             </div>
           </div>
 
           <!-- Progress Bar Etapa 1 -->
-          <div class="space-y-2 mb-8">
-            <div class="flex justify-between text-xs sm:text-sm font-bold">
+          <div class="space-y-1.5 mb-6">
+            <div class="flex justify-between text-xs font-bold">
               <span class="text-slate-200">Progreso de la Etapa 1 (255 metros)</span>
               <span class="text-emerald-400 font-extrabold">124m asegurados (48%)</span>
             </div>
-            <div class="w-full bg-slate-800/80 rounded-full h-4 p-0.5 border border-white/10">
-              <div class="bg-gradient-to-r from-blue-500 via-sky-400 to-emerald-400 h-3 rounded-full transition-all duration-700 ease-out" style="width: 48%;"></div>
+            <div class="w-full bg-slate-800/80 rounded-full h-3.5 p-0.5 border border-white/10">
+              <div class="bg-gradient-to-r from-blue-500 via-sky-400 to-emerald-400 h-2.5 rounded-full transition-all duration-700 ease-out" style="width: 48%;"></div>
             </div>
           </div>
 
           <!-- Grid de las 4 etapas del paredón -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             
-            <!-- Etapa 1 (ACTIVA) -->
-            <div class="bg-gradient-to-br from-blue-600/40 to-blue-900/60 border-2 border-emerald-400/80 rounded-2xl p-4 shadow-lg relative overflow-hidden">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-black uppercase text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-400/30">ACTIVA</span>
+            <div class="bg-blue-600/30 border-2 border-emerald-400 rounded-2xl p-3.5 shadow-md">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[10px] font-black uppercase text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-400/30">ACTIVA</span>
                 <span class="text-xs font-bold text-slate-300">0 - 255m</span>
               </div>
-              <h3 class="font-heading font-black text-base text-white">Etapa 1</h3>
-              <p class="text-xs text-slate-200 mt-1">Primeros 255 metros de paredón lineal, zapatas bajo tierra y columnas maestras.</p>
+              <h3 class="font-heading font-black text-sm text-white">Etapa 1</h3>
+              <p class="text-[11px] text-slate-200 mt-0.5">Primeros 255m de paredón lineal, zapatas bajo tierra y columnas.</p>
             </div>
 
-            <!-- Etapa 2 -->
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 opacity-70">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold uppercase text-slate-400">Próxima</span>
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 opacity-60">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[10px] font-bold uppercase text-slate-400">Próxima</span>
                 <span class="text-xs font-bold text-slate-400">255 - 510m</span>
               </div>
-              <h3 class="font-heading font-black text-base text-slate-200">Etapa 2</h3>
-              <p class="text-xs text-slate-400 mt-1">Segundos 255 metros de paredón lineal sobre el lateral norte del predio.</p>
+              <h3 class="font-heading font-black text-sm text-slate-200">Etapa 2</h3>
+              <p class="text-[11px] text-slate-400 mt-0.5">Segundos 255m de paredón lineal sobre el lateral norte.</p>
             </div>
 
-            <!-- Etapa 3 -->
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 opacity-70">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold uppercase text-slate-400">Próxima</span>
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 opacity-60">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[10px] font-bold uppercase text-slate-400">Próxima</span>
                 <span class="text-xs font-bold text-slate-400">510 - 765m</span>
               </div>
-              <h3 class="font-heading font-black text-base text-slate-200">Etapa 3</h3>
-              <p class="text-xs text-slate-400 mt-1">Terceros 255 metros de paredón lineal y cierre de cabecera posterior.</p>
+              <h3 class="font-heading font-black text-sm text-slate-200">Etapa 3</h3>
+              <p class="text-[11px] text-slate-400 mt-0.5">Terceros 255m de paredón lineal y cabecera posterior.</p>
             </div>
 
-            <!-- Etapa 4 -->
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 opacity-70">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold uppercase text-slate-400">Próxima</span>
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 opacity-60">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[10px] font-bold uppercase text-slate-400">Próxima</span>
                 <span class="text-xs font-bold text-slate-400">765 - 1.020m</span>
               </div>
-              <h3 class="font-heading font-black text-base text-slate-200">Etapa 4</h3>
-              <p class="text-xs text-slate-400 mt-1">Últimos 255 metros de paredón lineal y portones vehiculares de acceso.</p>
+              <h3 class="font-heading font-black text-sm text-slate-200">Etapa 4</h3>
+              <p class="text-[11px] text-slate-400 mt-0.5">Últimos 255m de paredón lineal y portones vehiculares.</p>
             </div>
 
           </div>
@@ -185,217 +180,98 @@
       </div>
     </section>
 
-    <!-- SECTION: FOTO DEL PAREDÓN CON FLECHITAS Y SEÑALIZACIÓN (BAJO TIERRA TAMBIÉN) -->
-    <section class="py-12 bg-white border-b border-slate-200">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- SECTION: FOTO REAL DEL PAREDÓN DE LADRILLOS BLOQUE (SOBRE Y BAJO TIERRA) -->
+    <section class="py-10 bg-white border-b border-slate-200">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
         
-        <div class="text-center max-w-2xl mx-auto mb-8">
-          <span class="text-xs font-bold uppercase tracking-wider text-alva-blue bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block mb-2">
-            Detalle Técnico de Construcción
+        <div class="text-center max-w-xl mx-auto mb-6">
+          <span class="text-xs font-bold uppercase tracking-wider text-alva-blue bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block mb-1.5">
+            Plano y Detalle Constructivo
           </span>
-          <h2 class="text-2xl sm:text-4xl font-heading font-black text-slate-900 uppercase">
-            Estructura del Paredón (Sobre y Bajo Tierra)
+          <h2 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 uppercase">
+            Paredón de Bloques (Sobre y Bajo Tierra)
           </h2>
-          <p class="text-slate-600 text-xs sm:text-sm mt-2">
-            Hacé clic en cualquier señalización para sumar ese material exacto a tu lista de donación.
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">
+            Estructura de hormigón armado, bloques vibrocomprimidos y cimientos profundos
           </p>
         </div>
 
-        <!-- DIAGRAMA TÉCNICO INTERACTIVO DEL PAREDÓN (SOBRE Y BAJO TIERRA) -->
-        <div class="bg-slate-950 rounded-3xl p-4 sm:p-8 text-white shadow-2xl relative overflow-hidden border border-slate-800">
+        <!-- FOTO REAL DEL PAREDÓN CON SELECTOR DE VISTAS -->
+        <div class="bg-slate-900 rounded-3xl p-3 sm:p-5 shadow-xl border border-slate-200">
           
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <!-- Graphic Illustration SVG -->
-            <div class="lg:col-span-8 relative">
-              <svg viewBox="0 0 760 520" class="w-full h-auto drop-shadow-xl select-none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <!-- Patrón Bloques de Cemento -->
-                  <pattern id="blockPattern" width="40" height="20" patternUnits="userSpaceOnUse">
-                    <rect width="40" height="20" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1"/>
-                    <line x1="20" y1="0" x2="20" y2="20" stroke="#94a3b8" stroke-width="1" stroke-dasharray="20,0"/>
-                  </pattern>
-                  <!-- Patrón Tierra Subterránea -->
-                  <pattern id="soilPattern" width="30" height="30" patternUnits="userSpaceOnUse">
-                    <rect width="30" height="30" fill="#3e2723"/>
-                    <circle cx="8" cy="8" r="1.5" fill="#5d4037"/>
-                    <circle cx="22" cy="18" r="2" fill="#2d1c16"/>
-                    <circle cx="15" cy="25" r="1" fill="#6d4c41"/>
-                  </pattern>
-                  <!-- Patrón Piedra Partida / Grava -->
-                  <pattern id="gravelPattern" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <rect width="20" height="20" fill="#475569"/>
-                    <polygon points="4,2 8,6 3,9" fill="#94a3b8"/>
-                    <polygon points="12,11 17,14 11,18" fill="#64748b"/>
-                    <polygon points="15,3 19,6 16,9" fill="#cbd5e1"/>
-                  </pattern>
-                </defs>
+          <!-- Image View Selector Tabs -->
+          <div class="flex items-center gap-2 pb-3 overflow-x-auto border-b border-slate-800 mb-3">
+            <button 
+              type="button"
+              onclick="switchWallImage('assets/muro-detalle-4.jpg', 'Infografía 3D Oficial: Detalle de muro perimetral, columnas, rióstras, zapatas y lecho de piedras', this)"
+              class="wall-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-alva-blue text-white shadow flex items-center gap-1.5 flex-shrink-0"
+            >
+              <i data-lucide="image" class="w-3.5 h-3.5"></i>
+              <span>Detalle Completo Muro</span>
+            </button>
 
-                <!-- CIELO / SOBRE TIERRA BG -->
-                <rect x="0" y="0" width="760" height="290" fill="#0f172a"/>
+            <button 
+              type="button"
+              onclick="switchWallImage('assets/muro-render-1.jpg', 'Render 3D en Perspectiva: Muro de bloques 2.62m, viga de amarre, pedestal y zapata bajo tierra', this)"
+              class="wall-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:text-white flex items-center gap-1.5 flex-shrink-0"
+            >
+              <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+              <span>Render 3D Perspectiva</span>
+            </button>
 
-                <!-- LÍNEA DE NIVEL DE SUELO (0.00m) -->
-                <line x1="0" y1="290" x2="760" y2="290" stroke="#10b981" stroke-width="3" stroke-dasharray="8,4"/>
-                <text x="25" y="280" font-family="'Montserrat', sans-serif" font-size="12" font-weight="800" fill="#10b981">
-                  ▲ SOBRE TIERRA (+2.40m)
-                </text>
-                <text x="25" y="315" font-family="'Montserrat', sans-serif" font-size="12" font-weight="800" fill="#f59e0b">
-                  ▼ BAJO TIERRA (-1.20m Cimientos)
-                </text>
+            <button 
+              type="button"
+              onclick="switchWallImage('assets/muro-corte-3.jpg', 'Plano Técnico Acotado: Dimensiones de muro, rióstras 30x30 y cimentación profunda', this)"
+              class="wall-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:text-white flex items-center gap-1.5 flex-shrink-0"
+            >
+              <i data-lucide="ruler" class="w-3.5 h-3.5"></i>
+              <span>Plano Técnico y Cotas</span>
+            </button>
+          </div>
 
-                <!-- TIERRA SUBTERRÁNEA BG -->
-                <rect x="0" y="290" width="760" height="230" fill="url(#soilPattern)"/>
+          <!-- Main Photo Container -->
+          <div class="relative bg-slate-950 rounded-2xl overflow-hidden flex items-center justify-center min-h-[320px] max-h-[580px]">
+            <img 
+              id="main-wall-photo"
+              src="assets/muro-detalle-4.jpg" 
+              alt="Detalle técnico de muro perimetral con bloques y cimientos bajo tierra" 
+              class="w-full h-auto object-contain max-h-[560px] rounded-2xl transition-opacity duration-200"
+            >
+          </div>
 
-                <!-- ================= SOBRE TIERRA: EL PAREDÓN ================= -->
-                
-                <!-- PAREDÓN DE BLOQUES DE CEMENTO -->
-                <rect x="220" y="60" width="320" height="230" fill="url(#blockPattern)" stroke="#64748b" stroke-width="2"/>
-
-                <!-- COLUMNA IZQUIERDA (Hormigón + Hierro de 12 y 6mm) -->
-                <rect x="180" y="40" width="40" height="250" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
-                <line x1="190" y1="45" x2="190" y2="285" stroke="#ef4444" stroke-width="3"/>
-                <line x1="210" y1="45" x2="210" y2="285" stroke="#ef4444" stroke-width="3"/>
-
-                <!-- COLUMNA DERECHA (Hormigón + Hierro de 12 y 6mm) -->
-                <rect x="540" y="40" width="40" height="250" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
-                <line x1="550" y1="45" x2="550" y2="285" stroke="#ef4444" stroke-width="3"/>
-                <line x1="570" y1="45" x2="570" y2="285" stroke="#ef4444" stroke-width="3"/>
-
-                <!-- VIGA DE CORONAMIENTO SUPERIOR (Hierro del 10 + Hormigón) -->
-                <rect x="175" y="35" width="410" height="25" fill="#64748b" stroke="#334155" stroke-width="2"/>
-                <line x1="185" y1="47" x2="575" y2="47" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,4"/>
-
-                <!-- ================= BAJO TIERRA: CIMIENTOS ================= -->
-
-                <!-- VIGA DE ENCADENADO INFERIOR BAJO TIERRA -->
-                <rect x="160" y="290" width="440" height="60" fill="#64748b" stroke="#334155" stroke-width="2"/>
-                <line x1="170" y1="310" x2="590" y2="310" stroke="#ef4444" stroke-width="3"/>
-                <line x1="170" y1="330" x2="590" y2="330" stroke="#ef4444" stroke-width="3"/>
-
-                <!-- ZAPATA CORRIDA MASIVA DE HORMIGÓN H21 (-1.20m) -->
-                <rect x="120" y="350" width="520" height="110" fill="#475569" stroke="#1e293b" stroke-width="3"/>
-                <!-- Armadura de hierro de 12 y 16 en la zapata -->
-                <line x1="135" y1="380" x2="625" y2="380" stroke="#ef4444" stroke-width="4"/>
-                <line x1="135" y1="420" x2="625" y2="420" stroke="#ef4444" stroke-width="4"/>
-                <line x1="200" y1="350" x2="200" y2="460" stroke="#f59e0b" stroke-width="3"/>
-                <line x1="380" y1="350" x2="380" y2="460" stroke="#f59e0b" stroke-width="3"/>
-                <line x1="560" y1="350" x2="560" y2="460" stroke="#f59e0b" stroke-width="3"/>
-
-                <!-- BASE DE PIEDRA PARTIDA Y ARENA COMPACTADA (-1.40m) -->
-                <rect x="100" y="460" width="560" height="40" fill="url(#gravelPattern)" stroke="#334155" stroke-width="2"/>
-
-                <!-- ================= FLECHITAS Y SEÑALIZACIÓN ================= -->
-
-                <!-- Flecha 1: Viga Superior (Hierro del 10) -->
-                <path d="M 640 45 L 590 45" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)" />
-                <circle cx="590" cy="45" r="4" fill="#38bdf8"/>
-
-                <!-- Flecha 2: Bloques de Cemento -->
-                <path d="M 640 140 L 490 140" stroke="#cbd5e1" stroke-width="2.5"/>
-                <circle cx="490" cy="140" r="4" fill="#cbd5e1"/>
-
-                <!-- Flecha 3: Columnas y Hierro de 12/6mm -->
-                <path d="M 100 130 L 180 130" stroke="#ef4444" stroke-width="2.5"/>
-                <circle cx="180" cy="130" r="4" fill="#ef4444"/>
-
-                <!-- Flecha 4 (Bajo Tierra): Hormigón H21 Zapata -->
-                <path d="M 100 400 L 160 400" stroke="#10b981" stroke-width="3"/>
-                <circle cx="160" cy="400" r="5" fill="#10b981"/>
-
-                <!-- Flecha 5 (Bajo Tierra): Hierro 12/16 en Cimientos -->
-                <path d="M 660 390 L 590 390" stroke="#ef4444" stroke-width="3"/>
-                <circle cx="590" cy="390" r="5" fill="#ef4444"/>
-
-                <!-- Flecha 6 (Bajo Tierra): Piedra Partida Drenante -->
-                <path d="M 660 480 L 600 480" stroke="#94a3b8" stroke-width="2.5"/>
-                <circle cx="600" cy="480" r="4" fill="#94a3b8"/>
-              </svg>
+          <!-- Photo Caption -->
+          <div class="pt-3 px-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <i data-lucide="info" class="w-4 h-4 text-sky-400 flex-shrink-0"></i>
+              <span id="wall-photo-caption" class="font-medium">
+                Infografía 3D Oficial: Detalle de muro perimetral, columnas (25x25), rióstras (30x30), zapatas (35x35) y lecho de piedras
+              </span>
             </div>
+            <span class="text-[11px] text-slate-500 font-mono flex-shrink-0">1 paño = 3.00m x 2.40m</span>
+          </div>
 
-            <!-- Interactive Material Callouts -->
-            <div class="lg:col-span-4 space-y-3 text-xs">
-              
-              <div class="pb-2 border-b border-slate-800">
-                <span class="text-[11px] font-extrabold uppercase text-sky-400 tracking-wider">
-                  Materiales Señalizados
-                </span>
-                <p class="text-slate-400 text-[11px]">Tocá cualquier material para sumar 1 unidad directo:</p>
-              </div>
-
-              <!-- Item 1: Hierro 10 Corona -->
-              <button onclick="highlightMaterialFromDiagram('hierro-10')" class="diagram-pin w-full text-left p-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-sky-400 flex items-center justify-between gap-2">
-                <div>
-                  <div class="font-bold text-white flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span>
-                    <span>Hierro del 10 mm</span>
-                  </div>
-                  <div class="text-[10px] text-slate-400">Corona y encadenado superior (+2.40m)</div>
-                </div>
-                <span class="text-xs font-bold text-sky-400 bg-sky-950 px-2 py-1 rounded">+ $15.200</span>
-              </button>
-
-              <!-- Item 2: Bloques Muro -->
-              <button onclick="highlightMaterialFromDiagram('ladrillo-block')" class="diagram-pin w-full text-left p-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-slate-400 flex items-center justify-between gap-2">
-                <div>
-                  <div class="font-bold text-white flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
-                    <span>Bloques de Cemento 19x19x39</span>
-                  </div>
-                  <div class="text-[10px] text-slate-400">Paredón perimetral sobre tierra</div>
-                </div>
-                <span class="text-xs font-bold text-slate-300 bg-slate-800 px-2 py-1 rounded">+ $1.950</span>
-              </button>
-
-              <!-- Item 3: Hierro 12 Columnas -->
-              <button onclick="highlightMaterialFromDiagram('hierro-12')" class="diagram-pin w-full text-left p-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-red-500 flex items-center justify-between gap-2">
-                <div>
-                  <div class="font-bold text-white flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
-                    <span>Hierro del 12 mm</span>
-                  </div>
-                  <div class="text-[10px] text-slate-400">Columnas verticales y zapatas</div>
-                </div>
-                <span class="text-xs font-bold text-red-400 bg-red-950 px-2 py-1 rounded">+ $21.700</span>
-              </button>
-
-              <!-- Item 4: Hormigón H21 Bajo Tierra -->
-              <button onclick="highlightMaterialFromDiagram('hormigon-m3')" class="diagram-pin w-full text-left p-2.5 rounded-xl bg-slate-900 border border-emerald-500/50 hover:border-emerald-400 flex items-center justify-between gap-2">
-                <div>
-                  <div class="font-bold text-white flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-                    <span>Hormigón H21 (Bajo Tierra)</span>
-                  </div>
-                  <div class="text-[10px] text-emerald-300">Cimientos y zapatas a -1.20m de profundidad</div>
-                </div>
-                <span class="text-xs font-bold text-emerald-400 bg-emerald-950 px-2 py-1 rounded">+ $135.000</span>
-              </button>
-
-              <!-- Item 5: Hierro 6 Estribos -->
-              <button onclick="highlightMaterialFromDiagram('hierro-6')" class="diagram-pin w-full text-left p-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-red-400 flex items-center justify-between gap-2">
-                <div>
-                  <div class="font-bold text-white flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-                    <span>Hierro del 6 mm</span>
-                  </div>
-                  <div class="text-[10px] text-slate-400">Estribos de atado en columnas y vigas</div>
-                </div>
-                <span class="text-xs font-bold text-red-300 bg-red-950 px-2 py-1 rounded">+ $5.600</span>
-              </button>
-
-              <!-- Item 6: Piedra Partida Base -->
-              <button onclick="highlightMaterialFromDiagram('piedra-partida')" class="diagram-pin w-full text-left p-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-slate-400 flex items-center justify-between gap-2">
-                <div>
-                  <div class="font-bold text-white flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
-                    <span>Piedra Partida Granítica</span>
-                  </div>
-                  <div class="text-[10px] text-slate-400">Cama drenante profunda (-1.40m)</div>
-                </div>
-                <span class="text-xs font-bold text-slate-300 bg-slate-800 px-2 py-1 rounded">+ $42.000</span>
-              </button>
-
+          <!-- Quick Specs Strip Below Photo -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3 pt-3 border-t border-slate-800 text-center">
+            <div class="p-2 bg-slate-800/60 rounded-xl border border-slate-700/50">
+              <span class="text-[10px] uppercase font-bold text-sky-400 block">Paredón</span>
+              <span class="text-xs font-bold text-white">Bloques 39x19x19</span>
+              <span class="text-[9px] text-slate-400 block">13 unid. x m²</span>
             </div>
-
+            <div class="p-2 bg-slate-800/60 rounded-xl border border-slate-700/50">
+              <span class="text-[10px] uppercase font-bold text-sky-400 block">Columnas</span>
+              <span class="text-xs font-bold text-white">25 x 25 cm</span>
+              <span class="text-[9px] text-slate-400 block">Hierro 12 y estribos 6mm</span>
+            </div>
+            <div class="p-2 bg-slate-800/60 rounded-xl border border-slate-700/50">
+              <span class="text-[10px] uppercase font-bold text-sky-400 block">Bajo Tierra</span>
+              <span class="text-xs font-bold text-white">Rióstra 30x30</span>
+              <span class="text-[9px] text-slate-400 block">Hormigón armado H21</span>
+            </div>
+            <div class="p-2 bg-slate-800/60 rounded-xl border border-slate-700/50">
+              <span class="text-[10px] uppercase font-bold text-sky-400 block">Cimientos</span>
+              <span class="text-xs font-bold text-white">Zapatas 35x35</span>
+              <span class="text-[9px] text-slate-400 block">Lecho de piedras de drenaje</span>
+            </div>
           </div>
 
         </div>
@@ -403,80 +279,98 @@
       </div>
     </section>
 
-    <!-- SECTION: LISTA DE MATERIALES (ESTILO IMAGEN CON PUNTOS, BOTÓN +/- Y TOTAL) -->
-    <section id="materiales-section" class="py-12 md:py-16 bg-slate-100">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- SECTION: LISTA DE MATERIALES EN EL MISMO CUADRADO (CON TOTAL Y BOTÓN PAGAR) -->
+    <section id="materiales-section" class="py-12 bg-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
         
-        <!-- Header de la Lista -->
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4 pb-4 border-b border-slate-200">
+        <!-- Header de la sección de materiales -->
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
           <div>
             <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-alva-blue mb-1">
-              <i data-lucide="list-checks" class="w-4 h-4"></i>
-              <span>Materiales para esta etapa (Etapa 1/4)</span>
+              <i data-lucide="clipboard-list" class="w-4 h-4"></i>
+              <span>Materiales necesarios para esta etapa (Etapa 1/4)</span>
             </div>
-            <h2 class="text-2xl sm:text-4xl font-heading font-black text-slate-900 uppercase">
-              Lista de Materiales del Paredón
+            <h2 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 uppercase">
+              Lista de Compras del Paredón
             </h2>
-            <p class="text-slate-600 text-xs sm:text-sm mt-1">
-              Elegí las cantidades con los botones <strong>[ - ]</strong> y <strong>[ + ]</strong> para sumar al aporte
+            <p class="text-slate-600 text-xs sm:text-sm">
+              Sumá de a uno tus materiales usando los botones <strong>[ - ]</strong> y <strong>[ + ]</strong>
             </p>
           </div>
 
-          <!-- Category Filter Pills -->
-          <div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-full">
-            <button class="filter-btn active px-3.5 py-1.5 rounded-full text-xs font-bold transition-all bg-alva-navy text-white shadow-sm" data-cat="all">
+          <!-- Filtros de categoría -->
+          <div class="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full">
+            <button class="filter-btn active px-3 py-1 rounded-full text-xs font-bold transition-all bg-alva-navy text-white shadow-sm" data-cat="all">
               Todos
             </button>
-            <button class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="hierros">
+            <button class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="hierros">
               Hierros
             </button>
-            <button class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="aridos">
+            <button class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="aridos">
               Hormigón y Áridos
             </button>
-            <button class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="muros">
+            <button class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="muros">
               Bloques
             </button>
           </div>
         </div>
 
-        <!-- LISTA DINÁMICA DE MATERIALES (ESTILO IMAGEN) -->
-        <div id="materials-list-container" class="space-y-2.5">
-          <!-- Renderizado dinámico desde app.js -->
-        </div>
-
-        <!-- ================= CAJA DE TOTAL Y BOTÓN DE -> PAGAR !! ================= -->
-        <div class="mt-8 bg-gradient-to-br from-alva-navy via-slate-900 to-alva-navy text-white rounded-3xl p-6 sm:p-10 shadow-2xl border-2 border-emerald-400/40">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-            
-            <!-- Total amount & materials counter -->
-            <div class="space-y-1">
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-emerald-400 block">
-                Cuenta de lo que querés donar:
-              </span>
-              <div class="flex items-baseline gap-3">
-                <span class="text-xl sm:text-2xl font-heading font-extrabold text-slate-300">TOTAL =</span>
-                <span id="main-total-amount" class="text-3xl sm:text-5xl font-heading font-black text-white tracking-tight">
-                  $ 0
-                </span>
-              </div>
-              <p id="main-items-count" class="text-xs text-slate-400">
-                0 materiales seleccionados para el paredón
-              </p>
+        <!-- ================= EL MISMO CUADRADO PARA TODOS LOS MATERIALES ================= -->
+        <div id="materials-square-container" class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+          
+          <!-- Encabezado de la planilla dentro del mismo cuadrado -->
+          <div class="bg-slate-50 px-4 sm:px-6 py-3.5 border-b border-slate-200 flex items-center justify-between text-xs font-heading font-black text-slate-700 uppercase tracking-wider select-none">
+            <div class="flex items-center gap-2">
+              <span class="w-9 sm:w-11 text-center text-red-600">Cant.</span>
+              <span>Material y Especificación</span>
             </div>
-
-            <!-- BOTÓN DE -> PAGAR !! -->
-            <div class="flex-shrink-0">
-              <button 
-                id="main-pay-btn"
-                type="button"
-                class="w-full md:w-auto bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 font-heading font-black text-lg sm:text-xl py-4 sm:py-5 px-8 sm:px-12 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-200 active:scale-95 flex items-center justify-center gap-3 border-2 border-emerald-300/60 uppercase tracking-wide cursor-pointer"
-              >
-                <span>PAGAR</span>
-                <i data-lucide="arrow-right" class="w-6 h-6 stroke-[3]"></i>
-              </button>
+            <div class="flex items-center gap-8 sm:gap-14 pr-2">
+              <span class="hidden sm:inline">Precio Unit.</span>
+              <span>Aportar</span>
+              <span class="text-right min-w-[70px]">Subtotal</span>
             </div>
-
           </div>
+
+          <!-- LISTA DE FILAS (DIVIDE-Y DENTRO DEL MISMO CUADRADO) -->
+          <div id="materials-list-container" class="divide-y divide-slate-100">
+            <!-- Filas inyectadas dinámicamente desde app.js -->
+          </div>
+
+          <!-- ================= PIE DEL MISMO CUADRADO: TOTAL Y BOTÓN DE -> PAGAR !! ================= -->
+          <div class="bg-gradient-to-r from-slate-950 via-alva-navy to-slate-950 text-white p-6 sm:p-8 border-t-2 border-emerald-400">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+              
+              <!-- Total calculado -->
+              <div class="space-y-1">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block">
+                  Cuenta de lo que querés donar:
+                </span>
+                <div class="flex items-baseline gap-3">
+                  <span class="text-xl sm:text-2xl font-heading font-black text-slate-300">TOTAL =</span>
+                  <span id="main-total-amount" class="text-3xl sm:text-5xl font-heading font-black text-white tracking-tight">
+                    $ 0
+                  </span>
+                </div>
+                <p id="main-items-count" class="text-xs text-slate-400">
+                  0 materiales seleccionados para el paredón
+                </p>
+              </div>
+
+              <!-- BOTÓN DE -> PAGAR !! -->
+              <div class="flex-shrink-0">
+                <button 
+                  id="main-pay-btn"
+                  type="button"
+                  class="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 font-heading font-black text-lg sm:text-xl py-4 sm:py-5 px-8 sm:px-12 rounded-2xl shadow-2xl hover:shadow-emerald-500/30 transition-all duration-200 active:scale-95 flex items-center justify-center gap-3 border-2 border-emerald-300/80 uppercase tracking-wide cursor-pointer"
+                >
+                  <span>PAGAR</span>
+                  <i data-lucide="arrow-right" class="w-6 h-6 stroke-[3]"></i>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -484,16 +378,16 @@
 
   </main>
 
-  <!-- STICKY FLOATING BOTTOM BAR WITH TOTAL & PAGAR -->
+  <!-- STICKY FLOATING BAR CON TOTAL Y PAGAR -->
   <aside id="sticky-cart-bar" class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-2xl py-3 px-4 z-40 transform transition-transform duration-300 translate-y-full">
-    <div class="max-w-5xl mx-auto flex items-center justify-between gap-4">
+    <div class="max-w-4xl mx-auto flex items-center justify-between gap-4">
       
       <div class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-xl bg-alva-navy text-white flex items-center justify-center font-bold text-sm shadow-md">
           <i data-lucide="hammer" class="w-5 h-5 text-emerald-400"></i>
         </div>
         <div>
-          <div class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider">Total Donación</div>
+          <div class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Total Donación</div>
           <div class="text-base sm:text-xl font-heading font-black text-slate-900" id="sticky-cart-total">$ 0</div>
         </div>
         <span id="sticky-cart-count" class="hidden sm:inline-block bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-slate-200">
@@ -523,7 +417,7 @@
           </div>
           <div>
             <h3 class="font-heading font-black text-lg text-slate-900 uppercase">Confirmar Aporte</h3>
-            <p class="text-xs text-slate-500">Etapa 1: 255 metros de paredón</p>
+            <p class="text-xs text-slate-500">Etapa 1: Primeros 255 metros de paredón</p>
           </div>
         </div>
         <button id="close-checkout-modal-btn" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
@@ -572,7 +466,7 @@
 
   <!-- FOOTER -->
   <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-3">
       <p class="font-heading font-bold text-white text-sm">CLUB ATLÉTICO ALVARADO • MAR DEL PLATA</p>
       <p class="text-slate-400 max-w-md mx-auto">
         Proyecto 1: Cierre Perimetral de la Villa Deportiva (Ruta 88). Campaña oficial de materiales por etapas.
