@@ -1,0 +1,103 @@
+/* Alvarado Proyectos - Custom Styles */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Material Card Hover & Transitions */
+.material-card {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.material-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -6px rgba(0, 32, 96, 0.09), 0 6px 12px -4px rgba(0, 0, 0, 0.04);
+}
+
+.material-card.has-items {
+  border-color: #0066cc;
+  background-color: #f8fbff;
+}
+
+/* Remove default number input arrows */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Drawer open states */
+body.drawer-open {
+  overflow: hidden;
+}
+
+#cart-drawer-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#cart-drawer-overlay.active #cart-drawer {
+  transform: translateX(0);
+}
+
+/* Transfer modal open states */
+#transfer-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#transfer-modal.active #transfer-modal-card {
+  transform: scale(1);
+}
+
+/* Sticky cart visible state */
+#sticky-cart-bar.visible {
+  transform: translateY(0);
+}
+
+/* Quantity Button Ripple / Active state */
+.qty-btn {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.qty-btn:active {
+  transform: scale(0.92);
+}
+
+/* Filter pills active */
+.filter-btn.active {
+  background-color: #001a44 !important;
+  color: #ffffff !important;
+  border-color: #001a44 !important;
+}
+
+/* Toast message animation */
+.toast-item {
+  animation: toastSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

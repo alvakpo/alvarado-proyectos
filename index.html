@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvarado Proyectos | Proyecto 1: Cerrar la Villa Deportiva</title>
+  <meta name="description" content="Campaña oficial del Club Atlético Alvarado: sumá materiales para el Proyecto 1: Cerrar la Villa Deportiva. Cada metro cuenta para nuestro predio.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,25 95,75 50,95 5,75 5,25' fill='%23002b66' stroke='%23ffffff' stroke-width='4'/><text x='50%' y='58%' font-size='24' font-weight='bold' fill='white' font-family='sans-serif' text-anchor='middle'>CAA</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alva: {
+              navy: '#001a44',
+              blue: '#003882',
+              lightBlue: '#0066cc',
+              sky: '#38bdf8',
+              accent: '#f59e0b',
+              grayBg: '#f8fafc',
+              border: '#e2e8f0'
+            }
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-body antialiased min-h-screen flex flex-col selection:bg-alva-lightBlue selection:text-white">
+
+  <!-- TOP HEADER / BANNER -->
+  <header class="bg-alva-navy text-white sticky top-0 z-40 shadow-lg border-b border-alva-blue/50 backdrop-blur-md bg-opacity-95">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand & Club Escudo -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-alva-lightBlue to-alva-blue flex items-center justify-center p-1.5 shadow-md border-2 border-white/20 group-hover:scale-105 transition-transform duration-300">
+          <!-- Escudo CAA Estilizado SVG -->
+          <svg viewBox="0 0 100 110" class="w-full h-full drop-shadow">
+            <path d="M50 5 L90 20 L90 70 C90 90 50 105 50 105 C50 105 10 90 10 70 L10 20 Z" fill="#002b66" stroke="#ffffff" stroke-width="5"/>
+            <path d="M30 20 L30 85 M50 20 L50 100 M70 20 L70 85" stroke="#ffffff" stroke-width="7" opacity="0.35"/>
+            <rect x="15" y="42" width="70" height="24" rx="4" fill="#00183b" stroke="#ffffff" stroke-width="2"/>
+            <text x="50" y="59" font-family="'Montserrat', sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle" letter-spacing="1">C.A.A.</text>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-heading font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase">Alvarado Proyectos</span>
+            <span class="bg-blue-500/20 text-blue-300 border border-blue-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Oficial</span>
+          </div>
+          <p class="text-xs text-slate-300 hidden sm:block">Club Atlético Alvarado • Mar del Plata</p>
+        </div>
+      </a>
+
+      <!-- Quick Actions / Cart Button -->
+      <div class="flex items-center gap-3">
+        <button id="open-cart-btn" class="relative flex items-center gap-2.5 bg-alva-lightBlue hover:bg-blue-600 text-white font-semibold px-4 py-2.5 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg active:scale-95">
+          <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+          <span class="hidden sm:inline text-sm">Mi Lista de Aportes</span>
+          <span id="header-cart-badge" class="bg-alva-accent text-slate-900 text-xs font-black px-2 py-0.5 rounded-full min-w-[20px] text-center">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN HERO SECTION -->
+  <main class="flex-grow">
+    
+    <!-- Hero Banner -->
+    <section class="relative bg-gradient-to-b from-alva-navy via-alva-blue to-slate-900 text-white py-12 md:py-16 overflow-hidden">
+      <!-- Background pattern -->
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold text-blue-200">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Campaña de Construcción Colectiva
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight leading-tight uppercase">
+              Proyecto 1:<br class="hidden sm:block">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-sky-300 to-white">
+                Cerrar la Villa Deportiva
+              </span>
+            </h1>
+
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
+              El sueño de nuestro predio propio avanza con el aporte de cada hincha. Elegí los materiales que quieras sumar para levantar el muro perimetral y asegurar el futuro de nuestras divisiones formativas.
+            </p>
+
+            <!-- Quick Stats -->
+            <div class="pt-2 flex flex-wrap gap-4 justify-center lg:justify-start text-xs sm:text-sm">
+              <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2 rounded-lg">
+                <i data-lucide="map-pin" class="w-4 h-4 text-sky-400"></i>
+                <span class="font-medium">Predio Ruta 88, Mar del Plata</span>
+              </div>
+              <div class="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2 rounded-lg">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                <span class="font-medium">100% Destinado a Materiales de Obra</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Stage Card (Etapa 1/4) -->
+          <div class="lg:col-span-4">
+            <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+              <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-blue-500/20 rounded-full blur-2xl pointer-events-none"></div>
+
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-sky-300 bg-sky-950/60 px-3 py-1 rounded-md border border-sky-400/30">
+                  Estado Actual
+                </span>
+                <span class="text-xs font-bold text-slate-300">Etapa 1 de 4</span>
+              </div>
+
+              <h2 class="text-xl font-heading font-bold text-white mb-2">
+                Muro y Cierre Perimetral
+              </h2>
+              <p class="text-slate-300 text-xs sm:text-sm mb-5 leading-relaxed">
+                Levantamiento de bases, columnas estructurales y colocación de bloques para delimitar los primeros 450 metros de perímetro seguro.
+              </p>
+
+              <!-- Progress bar -->
+              <div class="space-y-2">
+                <div class="flex justify-between text-xs font-bold">
+                  <span class="text-slate-200">Progreso de la Etapa 1</span>
+                  <span class="text-emerald-400 font-extrabold" id="progress-percent-label">42%</span>
+                </div>
+                <div class="w-full bg-slate-800/80 rounded-full h-3.5 p-0.5 border border-white/10">
+                  <div id="progress-bar-fill" class="bg-gradient-to-r from-blue-500 to-emerald-400 h-2.5 rounded-full transition-all duration-700 ease-out" style="width: 42%;"></div>
+                </div>
+                <div class="flex justify-between text-[11px] text-slate-400 pt-1">
+                  <span>Meta: 450 metros lineales</span>
+                  <span class="text-emerald-300 font-semibold">189m asegurados</span>
+                </div>
+              </div>
+
+              <!-- Stepper indicators 1 to 4 -->
+              <div class="grid grid-cols-4 gap-1.5 mt-5 pt-4 border-t border-white/10 text-center">
+                <div class="p-1 rounded bg-blue-500/30 border border-blue-400/50">
+                  <p class="text-[10px] font-bold text-white">E1</p>
+                  <p class="text-[9px] text-blue-200 truncate">Cierre</p>
+                </div>
+                <div class="p-1 rounded bg-white/5 opacity-50">
+                  <p class="text-[10px] font-bold text-slate-300">E2</p>
+                  <p class="text-[9px] text-slate-400 truncate">Suelo</p>
+                </div>
+                <div class="p-1 rounded bg-white/5 opacity-50">
+                  <p class="text-[10px] font-bold text-slate-300">E3</p>
+                  <p class="text-[9px] text-slate-400 truncate">Luces</p>
+                </div>
+                <div class="p-1 rounded bg-white/5 opacity-50">
+                  <p class="text-[10px] font-bold text-slate-300">E4</p>
+                  <p class="text-[9px] text-slate-400 truncate">Sede</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MATERIALES NECESARIOS PARA ESTA ETAPA (ETAPA 1/4) -->
+    <section id="materiales-section" class="py-12 md:py-16 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 pb-4 border-b border-slate-200">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-alva-blue mb-1">
+              <i data-lucide="layers" class="w-4 h-4"></i>
+              <span>Campaña Villa Deportiva</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-heading font-black text-slate-900 uppercase">
+              Materiales necesarios para esta etapa
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-1">
+              Etapa 1/4 • Elegí las unidades de cada material y sumalas a tu lista de aporte
+            </p>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-full" id="filter-pills">
+            <button class="filter-btn active px-3.5 py-1.5 rounded-full text-xs font-bold transition-all bg-alva-navy text-white shadow-sm" data-cat="all">
+              Todos
+            </button>
+            <button class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200" data-cat="aridos">
+              Áridos y Mezclas
+            </button>
+            <button class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200" data-cat="hierros">
+              Hierros y Mallas
+            </button>
+            <button class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200" data-cat="muros">
+              Mampostería
+            </button>
+          </div>
+        </div>
+
+        <!-- Materials Grid -->
+        <div id="materials-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Dynamically populated via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INFO BANNER: TRANSPARENCIA Y COMPROMISO -->
+    <section class="py-12 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-alva-navy to-slate-900 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-xl">
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+            
+            <div class="space-y-3">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-sky-400">
+                <i data-lucide="receipt" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-heading font-bold text-lg text-white">Transparencia Total</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Cada aporte ingresa a una cuenta con rendición periódica. Los materiales comprados se informan semanalmente a la masa societaria e hinchas.
+              </p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-emerald-400">
+                <i data-lucide="award" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-heading font-bold text-lg text-white">Muro de Reconocimiento</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Todos los hinchas y familias que colaboren quedarán inmortalizados en la gran placa de los fundadores del predio deportivo.
+              </p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-alva-accent">
+                <i data-lucide="truck" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-heading font-bold text-lg text-white">Aportes Físicos en Corralón</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                ¿Tenés corralón o querés comprar y enviar directo? También podés coordinar la entrega física contactándonos directamente por WhatsApp.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- STICKY FLOATING CART BAR (Mobile & Desktop quick access) -->
+  <aside id="sticky-cart-bar" class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-2xl py-3.5 px-4 z-40 transform transition-transform duration-300 translate-y-full">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-alva-navy text-white flex items-center justify-center font-bold text-sm">
+          <i data-lucide="shopping-bag" class="w-5 h-5 text-sky-400"></i>
+        </div>
+        <div>
+          <div class="text-xs text-slate-500 font-medium">Tu aporte acumulado</div>
+          <div class="text-base sm:text-lg font-heading font-black text-slate-900" id="sticky-cart-total">$ 0</div>
+        </div>
+        <span id="sticky-cart-count" class="hidden sm:inline-block bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200">
+          0 materiales
+        </span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="sticky-view-cart-btn" class="bg-alva-lightBlue hover:bg-blue-600 text-white font-bold text-sm px-5 py-2.5 rounded-xl transition-all shadow-md active:scale-95 flex items-center gap-2">
+          <span>Ver Mi Lista y Aportar</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- SHOPPING CART / APORTES DRAWER MODAL -->
+  <div id="cart-drawer-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="cart-drawer" class="fixed right-0 top-0 bottom-0 w-full max-w-lg bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out">
+      
+      <!-- Drawer Header -->
+      <div class="p-5 border-b border-slate-200 bg-alva-navy text-white flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+            <i data-lucide="heart-handshake" class="w-5 h-5 text-emerald-400"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-white">Tu Lista de Aportes</h3>
+            <p class="text-xs text-blue-200">Proyecto 1: Villa Deportiva Alvarado</p>
+          </div>
+        </div>
+        <button id="close-cart-btn" class="text-slate-300 hover:text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Cerrar lista">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Items List -->
+      <div id="cart-items-container" class="flex-grow overflow-y-auto p-5 space-y-3">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Drawer Footer & Checkout -->
+      <div class="p-5 bg-slate-50 border-t border-slate-200 space-y-4">
+        
+        <!-- Subtotals -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex justify-between text-slate-600">
+            <span>Materiales seleccionados:</span>
+            <span id="drawer-total-items" class="font-semibold text-slate-800">0 unidades</span>
+          </div>
+          <div class="flex justify-between items-baseline pt-2 border-t border-slate-200 text-slate-900">
+            <span class="font-heading font-bold text-base">Total a aportar:</span>
+            <span id="drawer-total-price" class="font-heading font-black text-2xl text-alva-blue">$ 0</span>
+          </div>
+        </div>
+
+        <!-- Optional Hincha Name -->
+        <div>
+          <label for="hincha-name-input" class="block text-xs font-semibold text-slate-700 mb-1">
+            Tu Nombre o Familia (para el agradecimiento)
+          </label>
+          <input type="text" id="hincha-name-input" placeholder="Ej: Familia González / Socio 14.200" class="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-alva-lightBlue focus:border-alva-lightBlue outline-none transition-all">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="space-y-2 pt-1">
+          <!-- WhatsApp Action -->
+          <button id="action-whatsapp-btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2.5 text-sm">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Confirmar Aporte por WhatsApp</span>
+          </button>
+
+          <!-- Transfer Direct Button -->
+          <button id="show-transfer-info-btn" class="w-full bg-alva-navy hover:bg-alva-blue text-white font-bold py-2.5 px-4 rounded-xl border border-transparent transition-all flex items-center justify-center gap-2 text-xs sm:text-sm">
+            <i data-lucide="building-2" class="w-4 h-4"></i>
+            <span>Transferir por Alias / CBU</span>
+          </button>
+        </div>
+
+        <!-- Quick Clear Cart -->
+        <div class="flex justify-center">
+          <button id="clear-cart-btn" class="text-xs text-slate-400 hover:text-red-500 transition-colors flex items-center gap-1">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+            <span>Vaciar lista</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TRANSFER / ALIAS INFO MODAL -->
+  <div id="transfer-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 transform scale-95 transition-transform duration-300" id="transfer-modal-card">
+      
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div class="flex items-center gap-2">
+          <i data-lucide="landmark" class="w-5 h-5 text-alva-blue"></i>
+          <h4 class="font-heading font-bold text-slate-900 text-base">Datos Bancarios Oficiales</h4>
+        </div>
+        <button id="close-transfer-modal-btn" class="text-slate-400 hover:text-slate-600 p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="py-4 space-y-3 text-xs sm:text-sm">
+        <div class="p-3 bg-blue-50 rounded-xl border border-blue-100">
+          <p class="text-xs text-blue-900 font-semibold mb-1">Cuenta Corriente Oficial Pro-Obras:</p>
+          <p class="text-sm font-bold text-alva-navy">Club Atlético Alvarado</p>
+          <p class="text-xs text-slate-600">CUIT: 30-58923412-4</p>
+        </div>
+
+        <div class="space-y-1">
+          <span class="text-xs font-semibold text-slate-500">Alias de Transferencia:</span>
+          <div class="flex items-center justify-between p-2.5 bg-slate-100 rounded-xl border border-slate-200">
+            <span class="font-mono font-bold text-slate-900 text-sm" id="alias-text">ALVARADO.VILLA.MP</span>
+            <button id="copy-alias-btn" class="bg-white hover:bg-slate-50 text-alva-blue font-bold px-3 py-1 rounded-lg border border-slate-300 text-xs transition-all flex items-center gap-1 active:scale-95">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              <span id="copy-feedback">Copiar</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <span class="text-xs font-semibold text-slate-500">CBU:</span>
+          <div class="p-2.5 bg-slate-100 rounded-xl border border-slate-200 font-mono text-xs text-slate-800 break-all select-all">
+            0140323501400012345678
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-amber-900 text-xs leading-relaxed">
+          <strong>Importante:</strong> Una vez realizada la transferencia, envianos el comprobante por WhatsApp para asentar los materiales a tu nombre en la lista de aportes.
+        </div>
+      </div>
+
+      <div class="pt-2">
+        <button id="modal-send-receipt-btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Avisar pago por WhatsApp</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <div class="space-y-3 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-alva-blue flex items-center justify-center text-white font-heading font-black text-xs">
+              CAA
+            </div>
+            <span class="font-heading font-bold text-white text-base">Club Atlético Alvarado</span>
+          </div>
+          <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+            Fundado el 21 de junio de 1928. Mar del Plata, Provincia de Buenos Aires, Argentina. Comprometidos con el desarrollo social, deportivo y de infraestructura del club de la ciudad.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Proyecto 1</h5>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#materiales-section" class="hover:text-white transition-colors">Lista de Materiales</a></li>
+            <li><span class="text-slate-500">Etapa 1: Cierre Perimetral</span></li>
+            <li><span class="text-slate-500">Etapa 2: Movimiento de Suelos</span></li>
+            <li><span class="text-slate-500">Etapa 3: Iluminación y Alambrado</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Contacto Obras</h5>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-blue-400"></i>
+              <span>Subcomisión de Infraestructura</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-400"></i>
+              <span>Villa Deportiva • Ruta 88 Km 5.5</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-400"></i>
+              <span>proyectos@clubalvarado.com.ar</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2026 Club Atlético Alvarado. Todos los derechos reservados.</p>
+        <p class="text-[11px]">Diseñado para el hincha de Alvarado • Mar del Plata</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

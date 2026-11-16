@@ -1,0 +1,19 @@
+{
+  "name": "alvarado-proyectos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Club Atlético Alvarado - Campaña de Materiales: Cerrar la Villa Deportiva",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "alvarado",
+    "mar-del-plata",
+    "villa-deportiva",
+    "obras",
+    "materiales"
+  ],
+  "author": "Club Atlético Alvarado",
+  "license": "MIT"
+}
