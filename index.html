@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alvarado Proyectos | Etapa 1: Primeros 255 metros de Paredón Lineal</title>
-  <meta name="description" content="Club Atlético Alvarado: Campaña para los 855 metros de paredón perimetral en la Villa Deportiva. Sumá tus materiales y construyamos el futuro.">
+  <meta name="description"
+    content="Club Atlético Alvarado: Campaña para los 855 metros de paredón perimetral en la Villa Deportiva. Sumá tus materiales y construyamos el futuro.">
   <link rel="icon" type="image/svg+xml" href="assets/escudo-alvarado.svg">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -43,21 +47,28 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-100 text-slate-800 font-body antialiased min-h-screen flex flex-col selection:bg-alva-lightBlue selection:text-white">
+
+<body
+  class="bg-slate-100 text-slate-800 font-body antialiased min-h-screen flex flex-col selection:bg-alva-lightBlue selection:text-white">
 
   <!-- TOP HEADER -->
-  <header class="bg-alva-navy text-white sticky top-0 z-40 shadow-lg border-b border-alva-blue/50 backdrop-blur-md bg-opacity-95">
+  <header
+    class="bg-alva-navy text-white sticky top-0 z-40 shadow-lg border-b border-alva-blue/50 backdrop-blur-md bg-opacity-95">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-      
+
       <!-- Brand & Escudo Oficial -->
       <a href="#" class="flex items-center gap-3.5 group">
-        <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center p-1 shadow-md border-2 border-white/20 group-hover:scale-105 transition-transform duration-300">
-          <img src="assets/escudo-alvarado.svg" alt="Escudo Oficial Club Atlético Alvarado" class="w-full h-full object-contain">
+        <div
+          class="w-12 h-12 rounded-xl bg-white flex items-center justify-center p-1 shadow-md border-2 border-white/20 group-hover:scale-105 transition-transform duration-300">
+          <img src="assets/escudo-alvarado.svg" alt="Escudo Oficial Club Atlético Alvarado"
+            class="w-full h-full object-contain">
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <span class="font-heading font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase">Alvarado Proyectos</span>
-            <span class="bg-blue-500/20 text-blue-300 border border-blue-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Oficial</span>
+            <span class="font-heading font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase">Alvarado
+              Proyectos</span>
+            <span
+              class="bg-blue-500/20 text-blue-300 border border-blue-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Oficial</span>
           </div>
           <p class="text-xs text-slate-300 hidden sm:block">Club Atlético Alvarado • Mar del Plata</p>
         </div>
@@ -65,10 +76,12 @@
 
       <!-- Quick Total & Header Pay Button -->
       <div class="flex items-center gap-3">
-        <button onclick="openCheckoutModal()" class="relative flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-extrabold px-4 py-2.5 rounded-xl transition-all duration-200 shadow-md active:scale-95 text-xs sm:text-sm">
+        <button onclick="openCheckoutModal()"
+          class="relative flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-extrabold px-4 py-2.5 rounded-xl transition-all duration-200 shadow-md active:scale-95 text-xs sm:text-sm">
           <span>PAGAR</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          <span id="header-cart-badge" class="bg-white text-slate-900 text-xs font-black px-2 py-0.5 rounded-full min-w-[20px] text-center hidden">0</span>
+          <span id="header-cart-badge"
+            class="bg-white text-slate-900 text-xs font-black px-2 py-0.5 rounded-full min-w-[20px] text-center hidden">0</span>
         </button>
       </div>
 
@@ -76,22 +89,25 @@
   </header>
 
   <main class="flex-grow">
-    
+
     <!-- SECCIÓN SUPERIOR SIMPLIFICADA: TÍTULO Y ETAPAS A LA IZQUIERDA, FOTO A LA DERECHA -->
-    <section class="bg-gradient-to-b from-alva-navy via-slate-900 to-alva-navy text-white py-8 border-b border-slate-200">
+    <section
+      class="bg-gradient-to-b from-alva-navy via-slate-900 to-alva-navy text-white py-8 border-b border-slate-200">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-          
+
           <!-- COLUMNA IZQUIERDA: TÍTULO Y ABAJO ETAPAS -->
           <div class="md:col-span-6 space-y-4">
-            
+
             <!-- Título -->
             <div>
-              <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-blue-200 mb-2">
+              <div
+                class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-blue-200 mb-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>Campaña Villa Deportiva</span>
               </div>
-              <h1 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-black text-white uppercase leading-tight tracking-tight">
+              <h1
+                class="text-2xl sm:text-3xl lg:text-4xl font-heading font-black text-white uppercase leading-tight tracking-tight">
                 Proyecto 1:<br>Cerrar la Villa Deportiva
               </h1>
               <p class="text-xs text-slate-300 mt-1">
@@ -108,7 +124,8 @@
                   </span>
                   <span class="text-[11px] text-slate-300">Zapatas bajo tierra, columnas y bloques</span>
                 </div>
-                <span class="text-[10px] font-black uppercase text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-400/40 flex-shrink-0">
+                <span
+                  class="text-[10px] font-black uppercase text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-400/40 flex-shrink-0">
                   ACTIVA
                 </span>
               </div>
@@ -116,7 +133,9 @@
               <!-- Barra de progreso -->
               <div class="space-y-1">
                 <div class="w-full bg-slate-800 rounded-full h-3 p-0.5 border border-white/10">
-                  <div class="bg-gradient-to-r from-blue-500 to-emerald-400 h-2 rounded-full transition-all duration-700" style="width: 48%;"></div>
+                  <div
+                    class="bg-gradient-to-r from-blue-500 to-emerald-400 h-2 rounded-full transition-all duration-700"
+                    style="width: 48%;"></div>
                 </div>
                 <div class="flex justify-between text-[11px] font-bold">
                   <span class="text-slate-300">124m asegurados (48%)</span>
@@ -146,12 +165,10 @@
           <!-- COLUMNA DERECHA: FOTO DEL PAREDÓN DE LADRILLOS BLOQUE -->
           <div class="md:col-span-6">
             <div class="relative bg-slate-950 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 group">
-              <img 
-                src="assets/muro-detalle-4.jpg" 
-                alt="Paredón de bloques sobre y bajo tierra" 
-                class="w-full h-64 sm:h-80 object-cover object-top group-hover:scale-105 transition-transform duration-300"
-              >
-              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-transparent p-3 flex items-center justify-between text-xs text-white">
+              <img src="assets/muro-detalle-4.jpg" alt="Paredón de bloques sobre y bajo tierra"
+                class="w-full h-64 sm:h-80 object-cover object-top group-hover:scale-105 transition-transform duration-300">
+              <div
+                class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-transparent p-3 flex items-center justify-between text-xs text-white">
                 <div class="font-bold flex items-center gap-1.5">
                   <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
                   <span>Estructura del Paredón (Sobre y Bajo Tierra)</span>
@@ -168,11 +185,12 @@
     <!-- ABAJO: DIRECTAMENTE LA LISTA DE MATERIALES EN EL MISMO CUADRADO -->
     <section id="materiales-section" class="py-12 bg-slate-100">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        
+
         <!-- Header de la sección de materiales -->
         <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
           <div>
-            <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-alva-blue mb-1">
+            <div
+              class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-alva-blue mb-1">
               <i data-lucide="clipboard-list" class="w-4 h-4"></i>
               <span>Materiales necesarios para esta etapa (Etapa 1/4)</span>
             </div>
@@ -186,26 +204,36 @@
 
           <!-- Filtros de categoría -->
           <div class="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full">
-            <button class="filter-btn active px-3 py-1 rounded-full text-xs font-bold transition-all bg-alva-navy text-white shadow-sm" data-cat="all">
+            <button
+              class="filter-btn active px-3 py-1 rounded-full text-xs font-bold transition-all bg-alva-navy text-white shadow-sm"
+              data-cat="all">
               Todos
             </button>
-            <button class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="hierros">
+            <button
+              class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300"
+              data-cat="hierros">
               Hierros
             </button>
-            <button class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="aridos">
+            <button
+              class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300"
+              data-cat="aridos">
               Hormigón y Áridos
             </button>
-            <button class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300" data-cat="muros">
+            <button
+              class="filter-btn px-3 py-1 rounded-full text-xs font-semibold transition-all bg-white text-slate-700 hover:bg-slate-200 border border-slate-300"
+              data-cat="muros">
               Bloques
             </button>
           </div>
         </div>
 
         <!-- ================= EL MISMO CUADRADO PARA TODOS LOS MATERIALES ================= -->
-        <div id="materials-square-container" class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
-          
+        <div id="materials-square-container"
+          class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+
           <!-- Encabezado de la planilla dentro del mismo cuadrado -->
-          <div class="bg-slate-50 px-4 sm:px-6 py-3.5 border-b border-slate-200 flex items-center justify-between text-xs font-heading font-black text-slate-700 uppercase tracking-wider select-none">
+          <div
+            class="bg-slate-50 px-4 sm:px-6 py-3.5 border-b border-slate-200 flex items-center justify-between text-xs font-heading font-black text-slate-700 uppercase tracking-wider select-none">
             <div class="flex items-center gap-2">
               <span class="w-9 sm:w-11 text-center text-red-600">Cant.</span>
               <span>Material y Especificación</span>
@@ -218,14 +246,15 @@
           </div>
 
           <!-- LISTA DE FILAS (DIVIDE-Y DENTRO DEL MISMO CUADRADO) -->
-          <div id="materials-list-container" class="divide-y divide-slate-100">
+          <div id="materials-list-container">
             <!-- Filas inyectadas dinámicamente desde app.js -->
           </div>
 
           <!-- ================= PIE DEL MISMO CUADRADO: TOTAL Y BOTÓN DE -> PAGAR !! ================= -->
-          <div class="bg-gradient-to-r from-slate-950 via-alva-navy to-slate-950 text-white p-6 sm:p-8 border-t-2 border-emerald-400">
+          <div
+            class="bg-gradient-to-r from-slate-950 via-alva-navy to-slate-950 text-white p-6 sm:p-8 border-t-2 border-emerald-400">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-              
+
               <!-- Total calculado -->
               <div class="space-y-1">
                 <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block">
@@ -233,7 +262,8 @@
                 </span>
                 <div class="flex items-baseline gap-3">
                   <span class="text-xl sm:text-2xl font-heading font-black text-slate-300">TOTAL =</span>
-                  <span id="main-total-amount" class="text-3xl sm:text-5xl font-heading font-black text-white tracking-tight">
+                  <span id="main-total-amount"
+                    class="text-3xl sm:text-5xl font-heading font-black text-white tracking-tight">
                     $ 0
                   </span>
                 </div>
@@ -244,11 +274,8 @@
 
               <!-- BOTÓN DE -> PAGAR !! -->
               <div class="flex-shrink-0">
-                <button 
-                  id="main-pay-btn"
-                  type="button"
-                  class="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 font-heading font-black text-lg sm:text-xl py-4 sm:py-5 px-8 sm:px-12 rounded-2xl shadow-2xl hover:shadow-emerald-500/30 transition-all duration-200 active:scale-95 flex items-center justify-center gap-3 border-2 border-emerald-300/80 uppercase tracking-wide cursor-pointer"
-                >
+                <button id="main-pay-btn" type="button"
+                  class="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 font-heading font-black text-lg sm:text-xl py-4 sm:py-5 px-8 sm:px-12 rounded-2xl shadow-2xl hover:shadow-emerald-500/30 transition-all duration-200 active:scale-95 flex items-center justify-center gap-3 border-2 border-emerald-300/80 uppercase tracking-wide cursor-pointer">
                   <span>PAGAR</span>
                   <i data-lucide="arrow-right" class="w-6 h-6 stroke-[3]"></i>
                 </button>
@@ -265,24 +292,28 @@
   </main>
 
   <!-- STICKY FLOATING BAR CON TOTAL Y PAGAR -->
-  <aside id="sticky-cart-bar" class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-2xl py-3 px-4 z-40 transform transition-transform duration-300 translate-y-full">
+  <aside id="sticky-cart-bar"
+    class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-2xl py-3 px-4 z-40 transform transition-transform duration-300 translate-y-full">
     <div class="max-w-4xl mx-auto flex items-center justify-between gap-4">
-      
+
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-alva-navy text-white flex items-center justify-center font-bold text-sm shadow-md">
+        <div
+          class="w-10 h-10 rounded-xl bg-alva-navy text-white flex items-center justify-center font-bold text-sm shadow-md">
           <i data-lucide="hammer" class="w-5 h-5 text-emerald-400"></i>
         </div>
         <div>
           <div class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Total Donación</div>
           <div class="text-base sm:text-xl font-heading font-black text-slate-900" id="sticky-cart-total">$ 0</div>
         </div>
-        <span id="sticky-cart-count" class="hidden sm:inline-block bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-slate-200">
+        <span id="sticky-cart-count"
+          class="hidden sm:inline-block bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-slate-200">
           0 materiales
         </span>
       </div>
 
       <div class="flex items-center gap-2">
-        <button id="sticky-pay-btn" class="bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-extrabold text-sm sm:text-base px-6 py-2.5 rounded-xl transition-all shadow-md active:scale-95 flex items-center gap-2 uppercase tracking-wide">
+        <button id="sticky-pay-btn"
+          class="bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-extrabold text-sm sm:text-base px-6 py-2.5 rounded-xl transition-all shadow-md active:scale-95 flex items-center gap-2 uppercase tracking-wide">
           <span>PAGAR</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </button>
@@ -292,9 +323,12 @@
   </aside>
 
   <!-- MODAL DE CHECKOUT / PAGAR -->
-  <div id="checkout-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 transform scale-95 transition-transform duration-300 flex flex-col max-h-[90vh]" id="checkout-modal-card">
-      
+  <div id="checkout-modal"
+    class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 transform scale-95 transition-transform duration-300 flex flex-col max-h-[90vh]"
+      id="checkout-modal-card">
+
       <!-- Modal Header -->
       <div class="flex items-center justify-between pb-4 border-b border-slate-100">
         <div class="flex items-center gap-3">
@@ -306,7 +340,8 @@
             <p class="text-xs text-slate-500">Etapa 1: Primeros 255 metros de paredón</p>
           </div>
         </div>
-        <button id="close-checkout-modal-btn" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+        <button id="close-checkout-modal-btn"
+          class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
@@ -327,18 +362,21 @@
           <label for="checkout-name-input" class="block text-xs font-bold text-slate-700 mb-1">
             Tu Nombre o Familia Hincha
           </label>
-          <input type="text" id="checkout-name-input" placeholder="Ej: Familia Gómez / Socio 12400" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-alva-lightBlue outline-none">
+          <input type="text" id="checkout-name-input" placeholder="Ej: Familia Gómez / Socio 12400"
+            class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-alva-lightBlue outline-none">
         </div>
       </div>
 
       <!-- Opciones de Pago -->
       <div class="pt-4 border-t border-slate-100 space-y-2.5">
-        <button id="modal-pay-whatsapp-btn" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-extrabold py-3.5 px-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2.5 text-sm uppercase tracking-wide active:scale-95">
+        <button id="modal-pay-whatsapp-btn"
+          class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-extrabold py-3.5 px-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2.5 text-sm uppercase tracking-wide active:scale-95">
           <i data-lucide="message-circle" class="w-5 h-5"></i>
           <span>Coordinar y Pagar por WhatsApp</span>
         </button>
 
-        <button id="modal-pay-mp-btn" class="w-full bg-sky-500 hover:bg-sky-400 text-white font-heading font-extrabold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm uppercase tracking-wide">
+        <button id="modal-pay-mp-btn"
+          class="w-full bg-sky-500 hover:bg-sky-400 text-white font-heading font-extrabold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm uppercase tracking-wide">
           <i data-lucide="credit-card" class="w-4 h-4"></i>
           <span>Pagar con Mercado Pago</span>
         </button>
@@ -348,7 +386,8 @@
   </div>
 
   <!-- TOAST NOTIFICATION CONTAINER -->
-  <div id="toast-container" class="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+  <div id="toast-container"
+    class="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
   <!-- FOOTER -->
   <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs">
@@ -368,4 +407,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>

@@ -188,91 +188,54 @@ function renderMaterialsList(filter = 'all') {
     const isSelected = qty > 0;
 
     return `
-      <div 
+      <div
         id="item-row-${mat.id}"
-        class="material-single-row ${isSelected ? 'selected' : ''} px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+        class="material-chip ${isSelected ? 'chip-selected' : ''}"
+        data-category="${mat.category}"
       >
-        <!-- Left: Red number, Strikethrough, Name, Dotted leader, Unit Price -->
-        <div class="flex items-center flex-grow min-w-0">
-          
-          <!-- Red number & Strikethrough from user reference image -->
-          <div class="flex flex-col items-center justify-center mr-3 sm:mr-4 w-9 sm:w-11 flex-shrink-0 text-center select-none">
-            <span class="text-xl sm:text-2xl font-heading font-black text-red-600 leading-none tracking-tight">
-              ${mat.redCount}
-            </span>
-            <span class="strikethrough-tag">
-              ${mat.struckCount}
-            </span>
-          </div>
-
-          <!-- Name & Spec -->
-          <div class="flex-shrink-0">
-            <div class="flex items-center gap-2">
-              <span class="font-heading font-black text-sm sm:text-base text-slate-900 capitalize tracking-tight">
-                ${mat.name}
-              </span>
-            </div>
-            <p class="text-[11px] sm:text-xs text-slate-500 truncate max-w-[200px] sm:max-w-xs md:max-w-md">
-              ${mat.spec}
-            </p>
-          </div>
-
-          <!-- Dotted Leader Line (like image) -->
-          <div class="dotted-leader hidden sm:block"></div>
-
-          <!-- Unit Price (like image) -->
-          <div class="ml-auto sm:ml-0 flex-shrink-0 text-right pr-2 select-none">
-            <span class="text-sm sm:text-base font-heading font-extrabold text-slate-800 tracking-tight">
-              ${formatMoney(mat.price)}
-            </span>
-            <span class="text-xs text-slate-400 font-medium ml-0.5">(${mat.unitShort})</span>
-          </div>
-
+        <!-- Número rojo + tachado -->
+        <div class="chip-num" aria-hidden="true">
+          <span class="chip-num-main">${mat.redCount}</span>
+          <span class="chip-num-struck">${mat.struckCount}</span>
         </div>
 
-        <!-- Right: [-] [qty] [+] Controls and Subtotal per item -->
-        <div class="flex items-center justify-between sm:justify-end gap-3 pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100 flex-shrink-0">
-          
-          <div class="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200 shadow-inner">
-            <button 
-              type="button"
-              onclick="changeQty('${mat.id}', -1)"
-              class="qty-btn w-8 h-8 rounded-lg bg-white text-slate-700 hover:bg-slate-200 flex items-center justify-center font-bold text-base transition-colors shadow-sm disabled:opacity-30 disabled:cursor-not-allowed"
-              ${qty === 0 ? 'disabled' : ''}
-              aria-label="Disminuir"
-            >
-              -
-            </button>
-            
-            <input 
-              type="number"
-              min="0"
-              value="${qty}"
-              id="input-${mat.id}"
-              onchange="setManualQty('${mat.id}', this.value)"
-              class="w-12 text-center bg-transparent font-heading font-bold text-slate-900 text-sm outline-none"
-              aria-label="Cantidad"
-            >
-
-            <button 
-              type="button"
-              onclick="changeQty('${mat.id}', 1)"
-              class="qty-btn w-8 h-8 rounded-lg bg-alva-lightBlue text-white hover:bg-blue-600 flex items-center justify-center font-bold text-base transition-colors shadow-sm active:scale-95"
-              aria-label="Aumentar"
-            >
-              +
-            </button>
-          </div>
-
-          <!-- Subtotal per item -->
-          <div class="text-right min-w-[95px] select-none">
-            <span class="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Subtotal</span>
-            <span class="text-sm sm:text-base font-heading font-black ${qty > 0 ? 'text-alva-blue' : 'text-slate-400'}">
-              ${formatMoney(subtotal)}
-            </span>
-          </div>
-
+        <!-- Nombre + precio unitario -->
+        <div class="chip-info">
+          <span class="chip-name">${mat.name}</span>
+          <span class="chip-uprice">${formatMoney(mat.price)} c/u</span>
         </div>
+
+        <!-- Controles [-][qty][+] -->
+        <div class="chip-controls" role="group" aria-label="Cantidad de ${mat.name}">
+          <button
+            type="button"
+            onclick="changeQty('${mat.id}', -1)"
+            class="chip-btn chip-minus"
+            ${qty === 0 ? 'disabled' : ''}
+            aria-label="Disminuir"
+          >−</button>
+          <input
+            type="number"
+            min="0"
+            value="${qty}"
+            id="input-${mat.id}"
+            onchange="setManualQty('${mat.id}', this.value)"
+            class="chip-qty"
+            aria-label="Cantidad"
+          >
+          <button
+            type="button"
+            onclick="changeQty('${mat.id}', 1)"
+            class="chip-btn chip-plus"
+            aria-label="Aumentar"
+          >+</button>
+        </div>
+
+        <!-- Subtotal (sólo visible cuando qty > 0) -->
+        ${isSelected
+          ? `<div class="chip-subtotal">${formatMoney(subtotal)}</div>`
+          : `<div class="chip-subtotal" style="color:#cbd5e1">$&nbsp;0</div>`
+        }
       </div>
     `;
   }).join('');
