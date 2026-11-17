@@ -1,4 +1,4 @@
-/**
+esta p/**
  * ALVARADO PROYECTOS - Sistema de Donación / Aporte de Materiales
  * Proyecto 1: Cerrar la Villa Deportiva
  * Etapa 1: Primeros 255 metros de Paredón Lineal
@@ -178,8 +178,8 @@ function renderMaterialsList(filter = 'all') {
   const container = document.getElementById('materials-list-container');
   if (!container) return;
 
-  const filtered = filter === 'all' 
-    ? MATERIALS 
+  const filtered = filter === 'all'
+    ? MATERIALS
     : MATERIALS.filter(m => m.category === filter);
 
   container.innerHTML = filtered.map(mat => {
