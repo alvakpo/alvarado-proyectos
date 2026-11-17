@@ -456,8 +456,7 @@ function payViaWhatsApp() {
   lines.push(`\n¡Hola! Quiero coordinar el pago o entrega de estos materiales para la obra del paredón.`);
 
   const fullText = encodeURIComponent(lines.join('\n'));
-  const phone = '5492235900000';
-  window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${fullText}`, '_blank');
+  window.open(`https://api.whatsapp.com/send?text=${fullText}`, '_blank');
 }
 
 function payViaMercadoPago() {
