@@ -1,4 +1,4 @@
-esta p/**
+/**
  * ALVARADO PROYECTOS - Sistema de Donación / Aporte de Materiales
  * Proyecto 1: Cerrar la Villa Deportiva
  * Etapa 1: Primeros 255 metros de Paredón Lineal
